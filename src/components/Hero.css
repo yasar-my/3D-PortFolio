@@ -126,9 +126,6 @@
   .hero-inner {
     grid-template-columns: 1fr;
   }
-  .hero-visual {
-    order: -1;
-  }
   .hero {
     padding-top: 130px;
   }
