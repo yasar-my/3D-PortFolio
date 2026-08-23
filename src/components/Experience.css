@@ -1,0 +1,99 @@
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.experience-meta {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-faint);
+  margin-top: -4px;
+  margin-bottom: 6px;
+}
+
+.experience-project {
+  color: var(--violet-400);
+  font-size: 0.95rem;
+  margin-bottom: 26px;
+}
+
+.experience-points {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.experience-points li {
+  color: var(--text-dim);
+  line-height: 1.7;
+  padding-left: 22px;
+  position: relative;
+}
+
+.experience-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 8px;
+  height: 1px;
+  background: var(--magenta);
+}
+
+.education-card {
+  padding: 32px;
+  position: sticky;
+  top: 110px;
+}
+
+.education-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--violet-700), var(--magenta));
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.education-card h3 {
+  font-size: 1.15rem;
+  color: var(--text);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.education-school {
+  color: var(--text);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.education-detail {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+  margin-bottom: 2px;
+}
+
+.education-cgpa {
+  margin-top: 14px;
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--violet-400);
+  border: 1px solid var(--border);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+  .education-card {
+    position: static;
+  }
+}

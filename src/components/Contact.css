@@ -1,0 +1,44 @@
+.contact-card {
+  position: relative;
+  padding: clamp(36px, 6vw, 64px);
+  overflow: hidden;
+  text-align: left;
+}
+
+.contact-glow {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  width: 60%;
+  height: 220px;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse, rgba(139, 92, 246, 0.3), transparent 70%);
+  pointer-events: none;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.contact-social {
+  display: flex;
+  gap: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.contact-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  transition: color 0.2s ease;
+}
+
+.contact-social a:hover {
+  color: var(--violet-400);
+}

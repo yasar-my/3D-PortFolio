@@ -1,0 +1,101 @@
+.resume-inner {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.resume-download {
+  font-size: 0.9rem;
+  padding: 15px 28px;
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 10px 30px -12px rgba(139, 92, 246, 0.55);
+  }
+  50% {
+    box-shadow: 0 10px 38px -8px rgba(192, 38, 211, 0.75);
+  }
+}
+
+.resume-preview {
+  position: relative;
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: 0 30px 60px -24px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.resume-preview:hover {
+  border-color: var(--violet-500);
+  box-shadow: 0 34px 70px -18px rgba(139, 92, 246, 0.4);
+}
+
+.resume-preview img {
+  width: 100%;
+  display: block;
+}
+
+.resume-preview::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(8, 8, 13, 0.85));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.resume-preview:hover::after {
+  opacity: 1;
+}
+
+.resume-preview-badge {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translate(-50%, 10px);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: #fff;
+  background: rgba(139, 92, 246, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  padding: 8px 16px;
+  border-radius: 100px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.resume-preview:hover .resume-preview-badge {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 900px) {
+  .resume-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .resume-preview {
+    order: -1;
+    max-width: 300px;
+  }
+}

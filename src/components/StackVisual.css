@@ -1,0 +1,102 @@
+.stack-visual {
+  position: relative;
+  perspective: 1500px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 30px 0 10px;
+}
+
+.stack-scene {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(18deg) rotateZ(0deg);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stack-layer {
+  transform-style: preserve-3d;
+  transform: translateZ(calc(var(--depth) * 46px));
+}
+
+.stack-layer-face {
+  position: relative;
+  border-radius: 16px;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(155deg, rgba(139, 92, 246, 0.14), rgba(192, 38, 211, 0.05) 60%, transparent),
+    linear-gradient(180deg, var(--surface), var(--surface-2));
+  box-shadow:
+    0 18px 34px -18px rgba(0, 0, 0, 0.65),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.stack-layer--db .stack-layer-face { border-color: rgba(139, 92, 246, 0.25); }
+.stack-layer--backend .stack-layer-face { border-color: rgba(139, 92, 246, 0.32); }
+.stack-layer--api .stack-layer-face { border-color: rgba(192, 38, 211, 0.32); }
+.stack-layer--frontend .stack-layer-face {
+  border-color: rgba(240, 171, 252, 0.4);
+  background:
+    linear-gradient(155deg, rgba(192, 38, 211, 0.18), rgba(139, 92, 246, 0.06) 60%, transparent),
+    linear-gradient(180deg, var(--surface), var(--surface-2));
+}
+
+.stack-layer.is-active .stack-layer-face {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow:
+    0 26px 46px -16px rgba(139, 92, 246, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.stack-layer-index {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--violet-400);
+  letter-spacing: 0.08em;
+}
+
+.stack-layer-label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 3px 0 6px;
+}
+
+.stack-layer-detail {
+  font-size: 0.86rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.stack-layer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.stack-beam {
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  bottom: 4%;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, var(--violet-500), var(--magenta), transparent);
+  opacity: 0.35;
+  transform: translateX(-50%) translateZ(-40px);
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .stack-visual { max-width: 320px; padding-top: 10px; }
+  .stack-scene { transform: rotateX(12deg); gap: 10px; }
+  .stack-layer { transform: translateZ(calc(var(--depth) * 24px)); }
+  .stack-layer-face { padding: 14px 16px; }
+}
