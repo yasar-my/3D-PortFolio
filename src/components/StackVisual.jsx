@@ -72,7 +72,6 @@ export default function StackVisual() {
           );
         })}
       </div>
-      <div className="stack-beam" aria-hidden="true" />
     </div>
   );
 }
