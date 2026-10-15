@@ -1,4 +1,3 @@
-```jsx
 import { motion } from "framer-motion";
 import { GraduationCap, BriefcaseBusiness } from "lucide-react";
 import { experience, education } from "../data/portfolio";
@@ -99,4 +98,3 @@ export default function Experience() {
     </section>
   );
 }
-```

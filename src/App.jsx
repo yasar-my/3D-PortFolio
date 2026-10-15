@@ -14,6 +14,7 @@ export default function App() {
     <>
       <AmbientBackground />
       <Navbar />
+
       <main style={{ position: "relative", zIndex: 1 }}>
         <Hero />
         <Skills />
@@ -23,6 +24,7 @@ export default function App() {
         <Certifications />
         <Contact />
       </main>
+
       <Footer />
     </>
   );
