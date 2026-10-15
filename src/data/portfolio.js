@@ -1,3 +1,4 @@
+```javascript
 // Centralized content — edit this file to update the entire site.
 
 export const profile = {
@@ -10,7 +11,7 @@ export const profile = {
   availability: "Immediate Joiner",
   looking: ["Development", "Testing", "DevOps"],
   summary:
-    "Java Full Stack Developer skilled in Java, Spring Boot, React.js, and MySQL. I design backend systems as independently deployable microservices, secure them with JWT and role-based access, and pair them with React interfaces that feel considered rather than assembled. Currently upskilling in testing, containers, and cloud fundamentals to round out the delivery pipeline end to end.",
+    "Full Stack Developer skilled in Java, Spring Boot, Node.js, Express.js, Angular, React.js, and MySQL. Experienced in developing RESTful APIs, building responsive frontend interfaces, implementing secure backend services, and integrating relational databases. Familiar with microservices architecture, JWT authentication, API testing, and version control.",
   links: {
     github: "https://github.com/yasar-my",
     linkedin: "https://www.linkedin.com/in/yasar-m-39a7b7356/",
@@ -30,46 +31,67 @@ export const stackLayers = [
   {
     id: "backend",
     label: "Backend",
-    detail: "Spring Boot microservices behind an API gateway",
-    tags: ["Java", "Spring Boot", "Spring Security", "Microservices"],
+    detail: "Spring Boot and Node.js backend services",
+    tags: [
+      "Java",
+      "Spring Boot",
+      "Node.js",
+      "Express.js",
+      "Spring Security",
+      "Microservices",
+    ],
   },
   {
     id: "api",
     label: "API Layer",
-    detail: "Authenticated REST endpoints, versioned contracts",
+    detail: "REST endpoints, authentication, and API testing",
     tags: ["REST APIs", "JWT", "Postman"],
   },
   {
     id: "frontend",
     label: "Frontend",
-    detail: "React interfaces consuming the gateway directly",
-    tags: ["React.js", "JavaScript", "Git"],
+    detail: "Responsive interfaces built with modern frontend frameworks",
+    tags: ["Angular", "React.js", "TypeScript", "JavaScript", "Git"],
   },
 ];
 
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["Java (Core & Advanced)", "JavaScript", "SQL", "HTML5 / CSS3"],
+    items: [
+      "Java (Core & Advanced)",
+      "JavaScript",
+      "TypeScript",
+      "SQL",
+      "HTML5 / CSS3",
+    ],
   },
   {
-    title: "Frameworks",
+    title: "Frameworks & Runtime",
     items: [
       "Spring Boot",
       "Spring Security",
       "Spring Data JPA",
       "Hibernate",
+      "Node.js",
+      "Express.js",
+      "Angular",
       "React.js",
       "Microservices",
     ],
   },
   {
     title: "Data & Auth",
-    items: ["MySQL", "REST APIs", "JWT Authentication", "Cloudinary"],
+    items: [
+      "MySQL",
+      "REST APIs",
+      "JWT Authentication",
+      "Cloudinary",
+    ],
   },
   {
     title: "Tooling",
-    items: ["Git", "GitHub", "Postman", "Maven"],
+    items: ["Git", "GitHub", "Postman", "Maven", "VS Code"],
   },
   {
     title: "Currently Upskilling",
@@ -129,23 +151,47 @@ export const projects = [
       "Framer Motion",
       "JavaScript",
     ],
-    github: "https://github.com/yasar-my/marvel-xmen-cinematic-timeline.git",
+    github:
+      "https://github.com/yasar-my/marvel-xmen-cinematic-timeline.git",
     demo: "https://marvel-xmen-cinematic-universe.vercel.app/",
   },
 ];
 
-export const experience = {
-  role: "Associate Backend Developer Intern",
-  company: "CodeTikki",
-  period: "March 2026 – June 2026",
-  project: "Student Micro Loan Platform",
-  points: [
-    "Designed backend microservices for a phased disbursement system — Wallet Credit live, UPI Transfer planned — balancing regulatory compliance with operational risk.",
-    "Built a rule-based eligibility and credit evaluation engine using platform activity data (quiz scores, streaks, engagement) as a creditworthiness proxy.",
-    "Developed the full repayment lifecycle — Active → Due → Overdue → Closed — with automated reminders and late-fee handling.",
-    "Implemented fraud detection covering duplicate accounts and suspicious activity flags.",
-  ],
-};
+export const experience = [
+  {
+    role: "Full Stack Developer Intern",
+    company: "Reno Infomatics Pvt Ltd",
+    period: "September 2026 – Present",
+    points: [
+      "Developed responsive and reusable web application components using Angular and TypeScript, following structured frontend development practices.",
+      "Designed and developed RESTful APIs using Node.js and Express.js to implement backend functionality and enable seamless client-server communication.",
+      "Integrated Angular frontend components with backend APIs and implemented MySQL database operations, including CRUD functionality and SQL queries.",
+      "Performed API testing and debugging using Postman, resolved frontend-backend integration issues, and used Git for version control and code management.",
+    ],
+    stack: [
+      "Node.js",
+      "Express.js",
+      "Angular",
+      "TypeScript",
+      "MySQL",
+      "REST APIs",
+      "Postman",
+      "Git",
+    ],
+  },
+  {
+    role: "Associate Backend Developer Intern",
+    company: "CodeTikki",
+    period: "March 2026 – June 2026",
+    project: "Student Micro Loan Platform",
+    points: [
+      "Designed backend microservices for a phased disbursement system — Wallet Credit live, UPI Transfer planned — balancing regulatory compliance with operational risk.",
+      "Built a rule-based eligibility and credit evaluation engine using platform activity data, including quiz scores, streaks, and engagement, as a creditworthiness proxy.",
+      "Developed the repayment lifecycle — Active → Due → Overdue → Closed — with automated reminders and late-fee handling.",
+      "Implemented fraud detection covering duplicate accounts and suspicious activity flags.",
+    ],
+  },
+];
 
 export const education = {
   degree: "Bachelor of Computer Applications (BCA)",
@@ -187,3 +233,4 @@ export const certifications = [
     image: "/certificates/agile.jpg",
   },
 ];
+```
