@@ -1,4 +1,7 @@
-// Centralized content — edit this file to update the entire site.
+/* =========================================================
+   Centralized portfolio content
+   Edit this file to update the entire site.
+   ========================================================= */
 
 export const profile = {
   name: "Yasar M",
@@ -9,17 +12,20 @@ export const profile = {
   phone: "+91 9087023639",
   availability: "Immediate Joiner",
   looking: ["Development", "Testing", "DevOps"],
+
   summary:
     "Full Stack Developer skilled in Java, Spring Boot, Node.js, Express.js, Angular, React.js, and MySQL. Experienced in developing RESTful APIs, building responsive frontend interfaces, implementing secure backend services, and integrating relational databases. Familiar with microservices architecture, JWT authentication, API testing, and version control.",
+
   links: {
     github: "https://github.com/yasar-my",
     linkedin: "https://www.linkedin.com/in/yasar-m-39a7b7356/",
     oldPortfolio: "https://yasar-portfolio-swart.vercel.app/",
   },
+
   resume: "/Yasar_M_Resume.pdf",
 };
 
-// The stack, ordered bottom → top, the way a request actually travels.
+// The stack, ordered bottom → top.
 export const stackLayers = [
   {
     id: "db",
@@ -105,18 +111,51 @@ export const skillGroups = [
 
 export const projects = [
   {
+    id: "spendora",
+    name: "Spendora",
+    tag: "Personal Expense Tracker",
+    period: "Personal Project",
+
+    description:
+      "A personal expense-tracking application designed to help users record daily spending, organize expenses by category, review monthly spending, and manage budgets. The application includes expense history and money-tracking features through a responsive interface.",
+
+    highlights: [
+      "Track and organize expenses by category",
+      "View monthly expenses and spending summaries",
+      "Manage budgets and monitor spending",
+      "Includes food, travel, rent, and other expense tracking",
+      "Supports data backup and restore",
+      "Provides English, Tamil, and Hindi language options",
+    ],
+
+    stack: [
+      "React.js",
+      "JavaScript",
+      "CSS3",
+      "LocalStorage",
+      "Responsive UI",
+    ],
+
+    github: "https://github.com/yasar-my",
+    demo: "https://spendora-three.vercel.app/",
+  },
+
+  {
     id: "feast-fete",
     name: "Feast & Fete",
     tag: "Catering Booking Platform",
     period: "Mar – May 2026",
+
     description:
       "A full-stack catering booking platform connecting customers with event organizers. Independent Auth, Profile, and Booking microservices sit behind an API gateway, with JWT-secured, role-based access for Admin, Organizer, and Customer.",
+
     highlights: [
       "8 documented REST endpoints, 9+ test cases at 100% pass rate",
       "Razorpay payment integration with real-time status tracking",
       "Cloudinary-backed organizer galleries and profile media",
       "Role-based access control across Admin, Organizer, Customer",
     ],
+
     stack: [
       "Java",
       "Spring Boot",
@@ -127,22 +166,27 @@ export const projects = [
       "Razorpay",
       "Cloudinary",
     ],
+
     github: "https://github.com/yasar-my/feast-fete.git",
     demo: "https://feast-fete.vercel.app/",
   },
+
   {
     id: "marvel-xmen",
     name: "Marvel & X-Men Cinematic Timeline",
     tag: "Cinematic Movie Universe Explorer",
     period: "Personal Project",
+
     description:
       "An immersive frontend built with React and Vite for exploring Marvel and X-Men movies, characters, and trailers — with an interactive chronological timeline instead of a plain listing page.",
+
     highlights: [
       "Dynamic movie detail routes with characters, trailers, and metadata",
       "Search and filter by universe, category, year, and character",
       "Framer Motion transitions, card tilt, and scroll reveals",
       "Centralized data layer — one file updates the entire site",
     ],
+
     stack: [
       "React.js",
       "Vite",
@@ -150,6 +194,7 @@ export const projects = [
       "Framer Motion",
       "JavaScript",
     ],
+
     github:
       "https://github.com/yasar-my/marvel-xmen-cinematic-timeline.git",
     demo: "https://marvel-xmen-cinematic-universe.vercel.app/",
@@ -161,12 +206,14 @@ export const experience = [
     role: "Full Stack Developer Intern",
     company: "Reno Infomatics Pvt Ltd",
     period: "September 2026 – Present",
+
     points: [
       "Developed responsive and reusable web application components using Angular and TypeScript, following structured frontend development practices.",
       "Designed and developed RESTful APIs using Node.js and Express.js to implement backend functionality and enable seamless client-server communication.",
       "Integrated Angular frontend components with backend APIs and implemented MySQL database operations, including CRUD functionality and SQL queries.",
       "Performed API testing and debugging using Postman, resolved frontend-backend integration issues, and used Git for version control and code management.",
     ],
+
     stack: [
       "Node.js",
       "Express.js",
@@ -178,11 +225,13 @@ export const experience = [
       "Git",
     ],
   },
+
   {
     role: "Associate Backend Developer Intern",
     company: "CodeTikki",
     period: "March 2026 – June 2026",
     project: "Student Micro Loan Platform",
+
     points: [
       "Designed backend microservices for a phased disbursement system — Wallet Credit live, UPI Transfer planned — balancing regulatory compliance with operational risk.",
       "Built a rule-based eligibility and credit evaluation engine using platform activity data, including quiz scores, streaks, and engagement, as a creditworthiness proxy.",
