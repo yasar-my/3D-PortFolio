@@ -136,7 +136,7 @@ export const projects = [
       "Responsive UI",
     ],
 
-    github: "https://github.com/yasar-my",
+    github: "https://github.com/yasar-my/Expense-Tracker.git",
     demo: "https://spendora-three.vercel.app/",
   },
 
