@@ -1,4 +1,3 @@
-```javascript
 // Centralized content — edit this file to update the entire site.
 
 export const profile = {
@@ -233,4 +232,3 @@ export const certifications = [
     image: "/certificates/agile.jpg",
   },
 ];
-```
